@@ -1,25 +1,12 @@
-''' myStatistics '''
-def myMean( A):
-  sum = 0
-  N = 0
-  for i in A:
-    sum += i
-    N += 1
-  if N > 0:
-    return sum/N
-  if N == 0:
-    return False
-
-def myMax(A):
-  max = 0
-  for i in A:
-    if i > max:
-      max = i
-  return max
-  
-def myMin(A):
-  min = 0
-  for i in A:
-    if i < min:
-      min = i
-  return min
+from cbMath import myArithmetic
+num_1 =int(input('請輸入第一個數: '))
+num_2 =int(input('請輸入第二個數: '))
+num_3 =int(input('請輸入第三個數: '))
+num_4 =int(input('請輸入第四個數: '))
+num_5 =int(input('請輸入第五個數: '))
+s = (num_1,num_2,num_3,nu_4,num_5)
+Sum=0
+for i in range(5):
+    Sum=myArithmetic.myAdd(Sum,s[i])
+Avg = myArithmetic.myDiv(Sum,5)
+print('數值合為:',Sum,'平均為:',Avg)
